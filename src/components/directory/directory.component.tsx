@@ -24,7 +24,7 @@ const categories: DirectoryCategory[] = [
     id: 201,
     title: 'kitchen',
     imageUrl: 'https://i.ibb.co/PhFj76m/kitchen.jpg',
-    route: 'shop/kitchens',
+    route: 'shop/kitchen',
   },
   {
     id: 301,
@@ -42,7 +42,7 @@ const categories: DirectoryCategory[] = [
     id: 501,
     title: 'bathroom',
     imageUrl: 'https://i.ibb.co/KKLt7YS/bathroom.jpg',
-    route: 'shop/bathrooms',
+    route: 'shop/bathroom',
   },
 ];
 
