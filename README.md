@@ -1,1 +1,1 @@
-Apparel and fashion shop
+Furniture shop
