@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const FooterContainer = styled.div`
 
-color: #fec6d1;
+color: #463f3a;
 position: relative;
 bottom: 8px;
 left: 5px;
