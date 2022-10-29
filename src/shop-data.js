@@ -1,3 +1,11 @@
+
+
+
+disp = new Intl.NumberFormat().format(price)
+
+
+
+
 const SHOP_DATA = [
   {
     title: 'living room',

@@ -1,7 +1,8 @@
 import { FC } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Component } from "react";
-import Slider from "react-slick";
+
+
 
 import { DirectoryCategory } from '../directory/directory.component';
 
@@ -15,6 +16,7 @@ type DirectoryItemProps = {
   category: DirectoryCategory;
 };
 
+
 const DirectoryItem: FC<DirectoryItemProps> = ({ category }) => {
   const { imageUrl, title, route } = category;
   const navigate = useNavigate();
@@ -22,6 +24,7 @@ const DirectoryItem: FC<DirectoryItemProps> = ({ category }) => {
   const onNavigateHandler = () => navigate(route);
 
   return (
+
     <DirectoryItemContainer onClick={onNavigateHandler}>
       <BackgroundImage imageUrl={imageUrl} />
       <Body>
@@ -29,6 +32,8 @@ const DirectoryItem: FC<DirectoryItemProps> = ({ category }) => {
         <p>Shop Now</p>
       </Body>
     </DirectoryItemContainer>
+
+
   );
 };
 

@@ -39,10 +39,11 @@ const Checkout = () => {
       {cartItems.map((cartItem) => (
         <CheckoutItem key={cartItem.id} cartItem={cartItem} />
       ))}
-      <Total>Total: ${cartTotal}</Total>
+      <Total>Total: ${new Intl.NumberFormat().format(cartTotal)}</Total>
       <PaymentForm />
     </CheckoutContainer>
   );
 };
 
 export default Checkout;
+

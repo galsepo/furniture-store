@@ -14,7 +14,7 @@ const CartItem: FC<CartItemProps> = memo(({ cartItem }) => {
       <ItemDetails>
         <span>{name}</span>
         <span>
-          {quantity} x ${price}
+          {quantity} x ${new Intl.NumberFormat().format(price)}
         </span>
       </ItemDetails>
     </CartItemContainer>

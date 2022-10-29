@@ -14,13 +14,12 @@ type CategoryRouteParams = {
 }
 const Category = () => {
   const { category } = useParams<keyof CategoryRouteParams>() as CategoryRouteParams;
-  console.log('render/re-render category component')
+
   const categoriesMap = useSelector(selectCategoriesMap);
   const isLoading = useSelector(selectCategoriesIsLoading);
   const [products, setProducts] = useState(categoriesMap[category]);
 
   useEffect(() => {
-    console.log('useEffect fired calling setProducts')
     setProducts(categoriesMap[category]);
   }, [category, categoriesMap]);
 
