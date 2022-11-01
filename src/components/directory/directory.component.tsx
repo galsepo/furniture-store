@@ -19,7 +19,7 @@ const categories: DirectoryCategory[] = [
     id: 101,
     title: 'living room',
     imageUrl: 'https://images.unsplash.com/photo-1615873968403-89e068629265?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80',
-    route: 'shop/livingrooms',
+    route: 'shop/living%20rooms',
   },
   {
     id: 201,
